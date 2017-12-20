@@ -1,0 +1,3 @@
+package: weibo
+import:
+- package: github.com/gin-gonic/gin
