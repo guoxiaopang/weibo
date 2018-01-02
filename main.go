@@ -8,6 +8,7 @@ import (
 
 func main() {
 	r := gin.Default()
+	// 注册路由
 	controller.RegisterRoutes(r)
 	r.Run()
 }
