@@ -12,10 +12,10 @@ func (c WeiboListController) RegisterRoute(e *gin.Engine) {
 	e.GET("/list", test)
 }
 
+func (c *WeiboListController) list(e *gin.Engine) string {
+	return ""
+}
+
 func test(c *gin.Context) {
-	c.JSON(200, gin.H{
-		"status":  "posted",
-		"message": "测试",
-		"nick":    "nickName",
-	})
+	success(c, "ddd")
 }
